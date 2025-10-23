@@ -1,4 +1,4 @@
-# H1 Readme
+# Readme
 Download all the files,compile with make in the folder  :
 On windows with mingw : mingw32-make main
 On linux : make main
@@ -9,5 +9,6 @@ in result,but does it in a better way.It handles collision with linked list.
 The menu is in french,and the format for reading and writing files is in the GdeBiblio.txt exemple.
 
 Thanks for using !
+
 
 
