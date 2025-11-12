@@ -1,14 +1,15 @@
-main : biblioLC.o EntreeSortieLC.o main.o
+mainH : biblioH.o EntreeSortieH.o mainH.o
 	gcc -o $@ $^
 
-biblioLC.o : biblioLC.c biblioLC.h
-	gcc -c biblioLC.c
+biblioH.o : biblioH.c biblioH.h
+	gcc -c biblioH.c
 
-EntreeSortieLC.o :EntreeSortieLC.c EntreeSortieLC.h
-	gcc -c EntreeSortieLC.c
+EntreeSortieH.o :EntreeSortieH.c EntreeSortieH.h
+	gcc -c EntreeSortieH.c
 
-main.o : main.c 
-	gcc -c main.c 
+mainH.o : mainH.c 
+	gcc -c mainH.c 
 clean :
 	rm -f *.o 
 
+#ajouter -lm pour l'ajout de la bibliotheque math.h
